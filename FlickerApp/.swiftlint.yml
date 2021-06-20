@@ -1,0 +1,128 @@
+disabled_rules:
+    - prohibited_interface_builder
+    - file_header
+    - explicit_init
+    - file_name
+    - pattern_matching_keywords
+    - private_outlet
+    - discouraged_object_literal
+    - object_literal
+    - vertical_whitespace_closing_braces
+    - vertical_whitespace_opening_braces
+    - strong_iboutlet
+    - nslocalizedstring_key
+    - trailing_whitespace
+    - empty_xctest_method
+    - single_test_class    
+analyzer_rules:
+    - unused_declaration
+    - unused_import
+opt_in_rules:
+    - vertical_whitespace
+    - empty_count
+    - unused_optional_binding
+    - joined_default_parameter
+    - valid_ibinspectable
+    - redundant_type_annotation
+    - type_name
+    - extension_access_modifier
+    - reduce_into
+    - large_tuple
+    - anyobject_protocol
+    - array_init
+    - closure_end_indentation
+    - closure_spacing
+    - collection_alignment
+    - contains_over_filter_count
+    - contains_over_filter_is_empty
+    - contains_over_first_not_nil
+    - empty_string
+    - fallthrough
+    - fatal_error_message
+    - flatmap_over_map_reduce
+    - identical_operands
+    - legacy_random
+    - let_var_whitespace
+    - last_where
+    - literal_expression_end_indentation
+    - lower_acl_than_parent
+    - modifier_order
+    - nimble_operator
+    - number_separator
+    - operator_usage_whitespace
+    - overridden_super_call
+    - override_in_extension
+    - private_action
+    - prohibited_super_call
+    - quick_discouraged_call
+    - quick_discouraged_focused_test
+    - quick_discouraged_pending_test
+    - redundant_nil_coalescing
+    - sorted_first_last
+    - sorted_imports
+    - static_operator
+    - unavailable_function
+    - unneeded_parentheses_in_closure_argument
+    - unowned_variable_capture
+    - untyped_error_in_catch
+    - vertical_parameter_alignment_on_call
+    - xct_specific_matcher
+    - yoda_condition
+    - attributes
+excluded:
+    - Carthage
+    - Pods
+    - Project/R.generated.swift
+    - SwiftLint/Common/3rdPartyLib
+    - Project/FlickerApp/FlickerAppUITests
+    - FlickerAppTests
+    - FlickerAppUITests
+attributes:
+    always_on_line_above:
+        - "@objc"
+        - "@nonobjc"
+        - "@available"
+        - "@discardableResult"
+    always_on_same_line:
+        - "@IBOutlet"
+        - "@IBAction"
+        - "@NSManaged"
+type_name:
+    min_length: 3 # only min_length
+    max_length: # warning and error
+    warning: 80
+    error: 70 # only error
+    
+line_length:
+    warning: 200
+    error: 300
+    ignores_function_declarations: true
+    ignores_comments: true
+    ignores_urls: true
+    
+function_body_length:
+    warning: 200
+    error: 300
+    
+function_parameter_count:
+    warning: 6
+    error: 8
+    
+type_body_length:
+    warning: 100
+    error: 120
+file_length:
+    warning: 250
+    error: 260
+    ignore_comment_only_lines: true
+    
+cyclomatic_complexity:
+    warning: 30
+    error: 25
+    
+identifier_name:
+    excluded:
+        - id
+    
+reporter: "xcode"
+

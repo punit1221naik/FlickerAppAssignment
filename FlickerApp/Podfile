@@ -1,0 +1,17 @@
+platform :ios, '9.0'
+
+target 'FlickerApp' do
+  use_frameworks!
+
+  pod 'SwiftLint'
+
+  target 'FlickerAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FlickerAppUITests' do
+    # Pods for testing
+  end
+
+end
